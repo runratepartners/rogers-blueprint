@@ -1,0 +1,316 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Rogers Furniture · The next 60 days · RunRate Partners</title>
+<meta name="robots" content="noindex, nofollow">
+<meta name="theme-color" content="#FBF7EC">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;600;700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;700&display=swap">
+<style>
+:root{--bg:#FBF7EC;--card:#fff;--ink:#141414;--muted:#4A4A4A;--dim:#6E6A60;--line:#E8E1CF;--line2:#CFC5A8;--yellow:#F2C230;--yellow2:#9A6B00;--red:#C8102E;--redw:#FBE9EC;--amber:#B45309;--amberw:#FDF1E3;--green:#2E7D4F;--greenw:#EAF5EE;--mono:'JetBrains Mono',ui-monospace,Menlo,monospace}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{background:var(--bg);color:var(--ink);font-family:Inter,system-ui,sans-serif;font-size:16px;line-height:1.6;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+.wrap{max-width:920px;margin:0 auto;padding:0 clamp(16px,4vw,32px)}
+p{color:var(--muted);line-height:1.7;margin-bottom:14px}
+b,strong{color:var(--ink);font-weight:600}
+h1,h2,h3{font-family:Oswald,sans-serif;text-transform:uppercase;line-height:1.08;letter-spacing:.01em}
+h1{font-weight:700;font-size:clamp(34px,6.5vw,58px);margin-bottom:14px}
+h2{font-weight:600;font-size:clamp(26px,4.2vw,38px);margin-bottom:10px}
+h3{font-weight:600;font-size:19px;margin-bottom:8px}
+h1 em,h2 em{font-style:normal;color:var(--red)}
+.eyebrow{display:block;font-family:var(--mono);font-size:10.5px;letter-spacing:.18em;text-transform:uppercase;color:var(--red);font-weight:700;margin-bottom:12px}
+.lede{font-size:16.5px;max-width:68ch;margin-bottom:24px}
+section{padding:52px 0;border-top:1px solid var(--line)}
+.top{padding:14px 0;border-bottom:1px solid var(--line);display:flex;align-items:center;gap:12px}
+.top img{width:46px;height:46px;border-radius:50%;border:2px solid var(--yellow)}
+.top .nm{font-family:Oswald,sans-serif;font-weight:700;text-transform:uppercase;letter-spacing:.06em;font-size:16px;line-height:1.1}
+.top .nm small{display:block;font-family:var(--mono);font-weight:500;font-size:10px;letter-spacing:.14em;color:var(--dim);text-transform:uppercase;margin-top:3px}
+.hero{border-top:none;padding:44px 0 40px;background:radial-gradient(900px 400px at 85% -10%,rgba(242,194,48,.25),transparent 60%)}
+.quote{border-left:4px solid var(--yellow);padding:4px 0 4px 18px;margin:18px 0 22px;font-family:Oswald,sans-serif;font-size:clamp(19px,3.2vw,24px);line-height:1.35;color:var(--ink);font-weight:500}
+.quote small{display:block;font-family:var(--mono);font-size:10.5px;letter-spacing:.14em;text-transform:uppercase;color:var(--dim);margin-top:8px;font-weight:500}
+.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-top:26px}
+@media screen and (max-width:600px){.stats{grid-template-columns:1fr 1fr}}
+.stat{background:var(--card);border:1px solid var(--line);border-top:3px solid var(--yellow);border-radius:12px;padding:16px}
+.stat .n{font-family:Oswald,sans-serif;font-size:30px;font-weight:700;line-height:1}
+.stat .n.r{color:var(--red)}.stat .n.g{color:var(--green)}
+.stat .l{font-family:var(--mono);font-size:10px;letter-spacing:.12em;text-transform:uppercase;color:var(--dim);margin-top:6px;line-height:1.5}
+/* reframes */
+.rf{background:var(--card);border:1px solid var(--line);border-left:4px solid var(--yellow);border-radius:12px;padding:20px 22px;margin-bottom:12px}
+.rf .k{font-family:var(--mono);font-size:10.5px;letter-spacing:.16em;text-transform:uppercase;color:var(--yellow2);font-weight:700;margin-bottom:6px}
+.rf h3{margin-bottom:10px}
+.rf .was{color:var(--dim);text-decoration:line-through;font-size:14.5px;margin-bottom:8px}
+.rf .was::before{content:"The audit assumed: ";text-decoration:none;display:inline;font-family:var(--mono);font-size:10px;letter-spacing:.12em;text-transform:uppercase;color:var(--dim)}
+.rf .cor{font-size:15px;color:var(--ink);margin-bottom:8px}
+.rf .cor::before{content:"On the call: ";font-family:var(--mono);font-size:10px;letter-spacing:.12em;text-transform:uppercase;color:var(--green);font-weight:700}
+.rf .kill{font-size:14px;color:var(--muted);border-top:1px dashed var(--line2);padding-top:8px;margin:0}
+.rf .kill::before{content:"What that changes: ";font-family:var(--mono);font-size:10px;letter-spacing:.12em;text-transform:uppercase;color:var(--red);font-weight:700}
+/* diagnosis */
+.dx{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:20px 22px;margin-bottom:12px;border-left:4px solid var(--amber)}
+.dx.c{border-left-color:var(--red)}.dx.m{border-left-color:var(--line2)}
+.pill{display:inline-block;font-family:var(--mono);font-size:9.5px;letter-spacing:.14em;text-transform:uppercase;font-weight:700;padding:3px 8px;border-radius:4px;margin-bottom:8px}
+.pill.c{background:var(--redw);color:var(--red)}.pill.h{background:var(--amberw);color:var(--amber)}.pill.m{background:#EEE;color:#555}.pill.g{background:var(--greenw);color:var(--green)}
+.dx h3{margin-bottom:8px}
+.dx p{margin-bottom:6px;font-size:15px}
+.dx p:last-child{margin:0}
+/* build */
+.bl{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.bc{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:18px 20px}
+.bc .t{font-weight:700;font-size:15.5px;margin-bottom:6px}
+.bc .d{font-size:14px;color:var(--muted);line-height:1.6}
+.bc .d b{color:var(--ink)}
+/* phases */
+.ph{display:grid;grid-template-columns:1.2fr 1fr 1fr;gap:12px}
+.pc{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:18px 20px;border-top:3px solid var(--line2)}
+.pc.one{border-top-color:var(--red);background:#fff}
+.pc .m{font-family:var(--mono);font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:var(--dim);margin-bottom:6px}
+.pc.one .m{color:var(--red)}
+.pc h3{margin-bottom:8px}
+.pc ul{list-style:none}
+.pc li{position:relative;padding-left:16px;font-size:14px;color:var(--muted);line-height:1.55;margin-bottom:6px}
+.pc li::before{content:"";position:absolute;left:0;top:9px;width:6px;height:6px;border-radius:50%;background:var(--yellow)}
+.pc li b{color:var(--ink)}
+.pc .date{font-family:var(--mono);font-size:11px;color:var(--ink);background:var(--yellow);display:inline-block;padding:3px 8px;border-radius:4px;margin-bottom:10px;font-weight:700;letter-spacing:.06em}
+/* leaks */
+.lk{background:var(--card);border:1px solid var(--line);border-left:4px solid var(--red);border-radius:12px;padding:20px 22px;margin-bottom:12px}
+.lk .k{font-family:var(--mono);font-size:10.5px;letter-spacing:.16em;text-transform:uppercase;color:var(--red);font-weight:700;margin-bottom:6px}
+.lk h3{margin-bottom:6px}
+.lk .num{font-family:Oswald,sans-serif;font-size:34px;font-weight:700;color:var(--red);line-height:1}
+.lk .num small{font-family:var(--mono);font-size:11px;color:var(--dim);letter-spacing:.1em;text-transform:uppercase;margin-left:8px;font-weight:500}
+.lk .math{font-family:var(--mono);font-size:12px;color:var(--muted);background:#F6F1E3;border-radius:6px;padding:8px 10px;margin:10px 0;line-height:1.6}
+.lk p{font-size:14.5px;margin-bottom:8px}
+.lk .goes{font-size:13.5px;color:var(--ink);border-top:1px dashed var(--line2);padding-top:8px;margin:0}
+.lk .goes::before{content:"Goes to: ";font-family:var(--mono);font-size:10px;letter-spacing:.12em;text-transform:uppercase;color:var(--red);font-weight:700}
+.sum{background:var(--ink);color:#F3EEDF;border-radius:14px;padding:22px 24px;margin-top:6px}
+.sum .k{font-family:var(--mono);font-size:10.5px;letter-spacing:.16em;text-transform:uppercase;color:var(--yellow);font-weight:700;margin-bottom:8px}
+.sum p{color:#E6E1D3;margin:0;font-size:15px}
+.sum b{color:#fff}
+/* price */
+.price{background:var(--card);border:1px solid var(--line2);border-radius:16px;padding:clamp(20px,4vw,30px);box-shadow:0 14px 40px -24px rgba(0,0,0,.3)}
+.ptop{display:flex;flex-wrap:wrap;gap:18px;align-items:flex-end;justify-content:space-between;padding-bottom:18px;border-bottom:1px solid var(--line)}
+.pnum{font-family:Oswald,sans-serif;font-size:clamp(46px,10vw,70px);font-weight:700;line-height:.95}
+.pnum small{display:block;font-family:var(--mono);font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--dim);margin-top:8px;font-weight:500}
+.pplus{font-family:Oswald,sans-serif;font-size:clamp(22px,4vw,30px);font-weight:600;line-height:1.1;text-transform:uppercase}
+.pplus em{font-style:normal;color:var(--red)}
+.pplus small{display:block;font-family:var(--mono);font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--dim);margin-top:6px;font-weight:500}
+.pcols{display:grid;grid-template-columns:1fr 1fr;gap:22px;margin-top:18px}
+.pcols h4{font-family:var(--mono);font-size:10.5px;letter-spacing:.14em;text-transform:uppercase;margin-bottom:10px}
+.pcols .in h4{color:var(--green)}.pcols .out h4{color:var(--red)}
+.pcols ul{list-style:none}
+.pcols li{position:relative;padding-left:18px;font-size:14px;color:var(--muted);line-height:1.6;margin-bottom:7px}
+.pcols .in li::before{content:"+";position:absolute;left:0;color:var(--green);font-weight:700}
+.pcols .out li::before{content:"\2013";position:absolute;left:0;color:var(--red);font-weight:700}
+.fine{margin-top:18px;padding-top:16px;border-top:1px solid var(--line);font-size:13.5px;color:var(--muted);line-height:1.7}
+.fine b{color:var(--ink)}
+/* wow */
+.wow{background:#fff;border:1px solid var(--yellow);border-radius:14px;padding:22px 24px;background:linear-gradient(135deg,rgba(242,194,48,.14),transparent 60%),#fff}
+.wow .k{font-family:var(--mono);font-size:10.5px;letter-spacing:.16em;text-transform:uppercase;color:var(--yellow2);font-weight:700;margin-bottom:8px}
+.wow p{margin-bottom:8px}
+.wow code{font-family:var(--mono);font-size:13px;background:#F6F1E3;padding:2px 6px;border-radius:4px;color:var(--ink)}
+/* next */
+.next{text-align:center;padding:52px 0 24px}
+.slot{display:inline-block;background:#fff;border:1px solid var(--line2);border-radius:12px;padding:20px 30px;margin-top:18px}
+.slot .w{font-family:Oswald,sans-serif;font-size:clamp(20px,4vw,26px);font-weight:600;text-transform:uppercase;line-height:1.25}
+.slot .s{font-family:var(--mono);font-size:10.5px;letter-spacing:.14em;text-transform:uppercase;color:var(--dim);margin-top:8px}
+.next p.fb{font-size:14px;max-width:52ch;margin:20px auto 0}
+footer{padding:26px 0 40px;text-align:center;font-family:var(--mono);font-size:10.5px;letter-spacing:.14em;text-transform:uppercase;color:var(--dim);border-top:1px solid var(--line);margin-top:30px;line-height:2}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.how{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:16px 18px;font-size:14.5px;color:var(--muted)}
+.how b{color:var(--ink)}
+@media screen and (max-width:760px){.bl,.ph,.pcols,.two{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+
+<div class="wrap top"><img src="data:image/jpeg;base64,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" alt=""><div class="nm">Rogers Furniture<small>La Puente · the next 60 days · built from the October 25 call</small></div></div>
+
+<main>
+<section class="hero"><div class="wrap">
+  <span class="eyebrow">For Petra, Lizzy and Sebastian · Sunday, October 25, 2026</span>
+  <h1>Back to 2024 numbers by January 15. <em>Then weekends off.</em></h1>
+  <p class="lede">You told us the store at its best did $40,000 to $50,000 a month, and that if it made that again you would keep it. You told us September was $14,000 and October is on pace for $10,000. This page is what we heard on Sunday, what we had wrong, where the money is going, and what we do about it in the next 60 days. The price is at the bottom.</p>
+  <div class="quote">"I've done it so many years. I just need the weekends off."<small>Petra · October 25</small></div>
+  <div class="stats">
+    <div class="stat"><div class="n g">$40k to $50k</div><div class="l">Best month, 2022, in your words</div></div>
+    <div class="stat"><div class="n">$25k to $30k</div><div class="l">A normal month in 2024</div></div>
+    <div class="stat"><div class="n r">$14k</div><div class="l">September 2026</div></div>
+    <div class="stat"><div class="n r">~$10k</div><div class="l">October, so far</div></div>
+    <div class="stat"><div class="n">80%</div><div class="l">Customers who speak Spanish</div></div>
+    <div class="stat"><div class="n">3 a week</div><div class="l">People asking for a custom size</div></div>
+  </div>
+</div></section>
+
+<!-- REFRAME -->
+<section><div class="wrap">
+  <span class="eyebrow">What we had wrong</span>
+  <h2>The audit was built from the outside. <em>Sunday fixed it.</em></h2>
+  <p class="lede">Before the call we only had what Google, Instagram and the public records show. Four things were wrong or missing, and each one changes the plan. We leave them on the page so you can see we were listening.</p>
+
+  <div class="rf"><div class="k">Reframe 01</div><h3>The financing is yours, and it is better than the one next door.</h3>
+    <div class="was">Roger's Acceptance, the finance company behind the store for 39 years, was the family's asset and the thing to build around.</div>
+    <div class="cor">Roger's Acceptance belongs to Roger, who still owns it and the building. Petra worked there 33 years. The financing Rogers Furniture customers actually get is Lizzy's own company: about 100 accounts on the books, 25 or so active, 95% of applicants approved, 20% interest. "Their rate went up to 50%. You get a $1,000 loan and you pay like $1,999."</div>
+    <p class="kill">The audit's idea of adding a second outside lender is dead. You already have the best financing on the street and nobody can find it. The plan is to put Lizzy's approval in front of every customer online, in Spanish, before they walk in. The money from financing stays in the family instead of going next door.</p>
+  </div>
+
+  <div class="rf"><div class="k">Reframe 02</div><h3>Custom sofas make the same margin as everything else. The win is volume, not price.</h3>
+    <div class="was">Custom work carries a fatter margin, so the plan was to charge against the custom specialists at $2,700 and up.</div>
+    <div class="cor">"If something costs 200, I sell it for 400. Same for custom. 50%." Builds take 7 days, two weeks at the most, three builders, "and they're all slow right now." Five custom sofas sold in the last three months. About three people a week ask for a specific size.</div>
+    <p class="kill">We stop trying to raise the custom price and start closing the people already asking. Three a week is roughly 12 a month asking, and five a quarter buying. Every one of those who walks out is a $2,000 ticket at your own margin, built by a shop that wants the work. That is the fastest money in the building, and it does not need a single new customer.</p>
+  </div>
+
+  <div class="rf"><div class="k">Reframe 03</div><h3>Sebastian is the salesman in the reviews, and he already does the thing we were going to build.</h3>
+    <div class="was">Petra was the only person in the store and Sebastian worked construction.</div>
+    <div class="cor">Most of the five-star Google reviews name Sebastian. He already prints the customer's floor plan and places the sofa and table on it. "Customers just love him." He also drives the truck with a cousin, and said out loud: "Execution is definitely one thing I lack in. Good ideas will only get you so far."</div>
+    <p class="kill">We do not build a floor-plan tool from scratch. We take what Sebastian does by hand in the store and put it on the phone and the website, so the woman waiting on her apartment keys and the one who has to convince her husband get the picture by text, with a price and a monthly payment, in 15 minutes. Sebastian runs it. We run the follow-up he said he does not.</p>
+  </div>
+
+  <div class="rf"><div class="k">Reframe 04</div><h3>You already have the list. It is on paper.</h3>
+    <div class="was">A store with no website and no email list has to buy every customer from scratch.</div>
+    <div class="cor">"We have 100, 150 good customers that we know of right now that have paid very, very well," plus "six years, if not ten years of paperwork of old customers." Some already come back. Some found you on Instagram. Some came because of the five stars on Google.</div>
+    <p class="kill">The cheapest sales in the next 60 days are not strangers. They are the people in those boxes, who already trust you, getting one text in Spanish before Thanksgiving. We type the list in. That job is ours.</p>
+  </div>
+</div></section>
+
+<!-- DIAGNOSIS -->
+<section><div class="wrap">
+  <span class="eyebrow">What is actually wrong</span>
+  <h2>Five things, <em>in order.</em></h2>
+  <p class="lede">The first one is the one you raised. The last one can wait, and we say so.</p>
+
+  <div class="dx c"><span class="pill c">Critical · costing money today</span><h3>Your customers stopped coming out, and there is nowhere else for them to find you.</h3>
+    <p>Eighty percent of your customers speak Spanish, and right now many of them are staying home. A family in Baldwin Park that needs a sofa this month searches "muebles La Puente" on a phone, sees three stores with websites and prices, and never sees Rogers, because there is no website, the Google listing has no link, and the Instagram has no prices. They buy from whoever answered. This is the whole gap, and it is why September was $14,000 instead of $25,000.</p></div>
+
+  <div class="dx c"><span class="pill c">Critical · costing money today</span><h3>Three people a week ask for a custom size. Most of them leave with nothing, and you never hear from them again.</h3>
+    <p>"I'm getting my apartment this week, I just have to get the keys and get measurements." "I love this one but I need to convince my husband." Both walk out, and there is no phone number saved, no text the next day, no picture of the sofa in their room. Five sold in three months against roughly 36 asking. Nobody on Hacienda advertises custom. "No one's used it as a niche." That is yours to take, and the people are already in your store.</p></div>
+
+  <div class="dx"><span class="pill h">High · costing money, less urgent</span><h3>Ninety-five percent get approved at 20%, and no customer knows that until they are standing at the counter.</h3>
+    <p>Roger's Acceptance next door charges 50%. Lizzy approves almost everyone with three options, half down, layaway, or low or no down. A customer afraid to come in cannot learn any of that from outside. The monthly payment is the number people buy on, "they don't care about this number, they care about this number," and it appears nowhere online.</p></div>
+
+  <div class="dx"><span class="pill h">High · costing money, less urgent</span><h3>100 to 150 customers who paid well, and ten years of records, have never been asked to come back.</h3>
+    <p>They are in paper files. Nobody has texted them a Christmas offer, a custom sofa deadline, or a thank you. A list like that is the one asset the big stores spend millions to build. Yours is in a filing cabinet.</p></div>
+
+  <div class="dx m"><span class="pill m">Moderate · this can wait</span><h3>Downsizing, the rent and free delivery.</h3>
+    <p>Ten thousand square feet for $5,000 a month is a good deal, and you are using almost all of it. The competition's free delivery hurts, but Sebastian and a cousin on the truck is cheaper than any company right now. Do not touch the space or the truck until we have November and December numbers on January 15. If sales come back, the space is an asset for staging and storage. If they do not, it is a conversation with Roger, not a reason to move today.</p></div>
+</div></section>
+
+<!-- THE BUILD -->
+<section><div class="wrap">
+  <span class="eyebrow">What we build</span>
+  <h2>Six things, all of them <em>in Spanish first.</em></h2>
+  <p class="lede">Plain language. What each one does in your store, not what software runs it.</p>
+  <div class="bl">
+    <div class="bc"><div class="t">1. The website, English and Spanish, with the custom sofa builder</div><div class="d">A customer picks the shape, drags the width to the inch, picks the fabric, and sees a price and a monthly payment before they ever come in. One tap sends it to your WhatsApp. You saw the skeleton on Sunday. The real one has your prices, your fabrics and your photos. <b>Live by November 10.</b></div></div>
+    <div class="bc"><div class="t">2. Lizzy's financing, out front</div><div class="d">"Approved on income, not on a score" on the first screen, in Spanish. A two-minute "call me back" form that goes straight to Lizzy's phone. The monthly payment shown next to every price on the floor. <b>Named so nobody confuses it with the company next door.</b></div></div>
+    <div class="bc"><div class="t">3. Every walk-in captured</div><div class="d">A QR code on the floor and on the custom sofas. Scan it, get the sofa-in-your-room picture Sebastian already makes, and your number is saved. The apartment-keys customer gets a text on Thursday. The convince-my-husband customer gets the picture to show him. <b>Nobody leaves without a way to come back.</b></div></div>
+    <div class="bc"><div class="t">4. Sebastian's room picture, on the phone</div><div class="d">The tool we showed you. Customer sends a photo and the wall width, Sebastian sends back the sofa in their room with a price and a monthly, in about 15 minutes, without leaving the store. <b>We set it up on his phone the first week.</b></div></div>
+    <div class="bc"><div class="t">5. The list, typed in and used</div><div class="d">The 100 to 150 good customers and the ten years of paper, entered by us. One Spanish text before Thanksgiving: custom by Christmas, order by November 20. One in December. Reviews asked for by text and QR, because Google ranks the store that has the most and answers them. <b>Google listing fixed to one name with the website on it.</b></div></div>
+    <div class="bc"><div class="t">6. The scoreboard, every Monday</div><div class="d">Sales, custom orders, financing applications, WhatsApp leads, walk-ins captured, Google reviews, and which day and hour the customers actually come. You said Friday to Sunday, maybe Wednesday evening. <b>In four weeks you will know, and the slow hours become postcard hours at the new apartments.</b></div></div>
+  </div>
+</div></section>
+
+<!-- PHASES -->
+<section><div class="wrap">
+  <span class="eyebrow">When</span>
+  <h2>Now through Christmas is the only phase <em>we are asking you to decide on.</em></h2>
+  <div class="ph">
+    <div class="pc one"><div class="m">Phase 1 · November and December</div><span class="date">Site live Nov 10 · Order deadline Nov 20 · Delivered by Dec 20</span><h3>Custom by Christmas</h3>
+      <ul><li><b>Week 1.</b> Prices and fabrics from your builder, photos of the floor, Lizzy's financing terms in writing. Site goes live in both languages. Sebastian's phone set up. Google listing fixed.</li>
+      <li><b>Week 2.</b> The paper list typed in. First text goes out. QR codes on the floor. First custom orders reserved through WhatsApp.</li>
+      <li><b>Week 3 and 4.</b> Follow-up on every size inquiry. Postcards to the new apartments and shopping centers around you on the slowest afternoons. Weekly scoreboard starts.</li>
+      <li><b>December.</b> Second text. Deliveries. Reviews collected at the door. Numbers for January 15.</li></ul></div>
+    <div class="pc"><div class="m">What becomes possible · January to March</div><h3>Apartments and realtors</h3>
+      <ul><li>Move-in packages for the new buildings around the store, priced per unit, financed by Lizzy.</li><li>Staging from your floor for Lizzy's realtor friends, the way she did it with the mobile homes, with the space you already have as the warehouse.</li><li>Decided on January 15 with real numbers, not before.</li></ul></div>
+    <div class="pc"><div class="m">What becomes possible · 2027</div><h3>A store that runs without Petra</h3>
+      <ul><li>The written way to do everything: quotes, financing, deliveries, follow-up. The thing you hand an employee so Petra gets her weekends.</li><li>Sebastian's seasonal idea, tested against the scoreboard instead of guessed at.</li><li>A business someone could buy, because the numbers and the customer list are in one place.</li></ul></div>
+  </div>
+</div></section>
+
+<!-- COST OF STANDING STILL -->
+<section><div class="wrap">
+  <span class="eyebrow">What standing still costs</span>
+  <h2>Where the money is going <em>right now.</em></h2>
+  <p class="lede">Every number below is one you gave us on Sunday. The math is under each one. These are ranges on purpose.</p>
+
+  <div class="lk"><div class="k">Leak 01 · the gap</div><h3>The distance between this October and a normal 2024 month</h3>
+    <div class="num">$15,000 to $20,000<small>a month</small></div>
+    <div class="math">2024 normal month $25,000 to $30,000 · October 2026 about $10,000 · same store, same floor, same family</div>
+    <p>Nothing about the store got worse. The customers got scared and the only way to reach them is a phone, and the store is not on it. This is not a cost cut problem. It is a reach problem.</p>
+    <p class="goes">The three other furniture stores on Hacienda, Living Spaces, and the wholesaler that now sells to the public directly.</p></div>
+
+  <div class="lk"><div class="k">Leak 02 · custom sizes</div><h3>People asking for a custom sofa and leaving without one</h3>
+    <div class="num">$6,000 to $12,000<small>a month</small></div>
+    <div class="math">about 3 asking a week = roughly 12 a month · 5 sold a quarter = under 2 a month · ~10 leave · close 3 to 6 more of them × $2,000 custom ticket · half of that is your margin</div>
+    <p>They are already in the store. They already want it. Nobody writes their number down. Your builder has room and wants the work.</p>
+    <p class="goes">A standard sectional somewhere else, or Sofa USA in Downey if they go looking, or nowhere, which is worse.</p></div>
+
+  <div class="lk"><div class="k">Leak 03 · the list</div><h3>100 to 150 good customers never asked to come back</h3>
+    <div class="num">$8,000 to $30,000<small>once, before Christmas</small></div>
+    <div class="math">10 to 15 of the 100 to 150 buy for the holidays · $800 to $2,000 each, your floor and custom prices · one text in Spanish, two at most</div>
+    <p>These are the people who "paid very, very well." A sofa for the family coming over for Christmas, financed by Lizzy, delivered by Sebastian. The highest trust and the lowest cost of anything on this page.</p>
+    <p class="goes">Wherever they happen to walk into first, because nobody reminded them you are still here.</p></div>
+
+  <div class="sum"><div class="k">Added up</div><p>Over November and December together, closing the custom gap and waking the list is <b>$20,000 to $50,000</b> the store is not getting today. Petra said if the store made its peak again she would keep it. The peak was $40,000 to $50,000 a month. 2024 was $25,000 to $30,000. <b>Getting back to 2024 by January 15 is the first goal.</b> That is the custom leak and the list leak, landed. The peak is the 2027 conversation.</p></div>
+</div></section>
+
+<!-- PRICE -->
+<section><div class="wrap">
+  <span class="eyebrow">What it costs</span>
+  <h2>One number a month. <em>The rest only if it works.</em></h2>
+  <div class="price">
+    <div class="ptop">
+      <div><div class="pnum">$500<small>a month · month to month · no contract</small></div></div>
+      <div><div class="pplus">+ 10% of what <em>we bring in</em><small>counted from the tracker, only on sales that came through what we build</small></div></div>
+    </div>
+    <div class="pcols">
+      <div class="in"><h4>What that covers</h4><ul>
+        <li>All six things above, built and running by November 10, in English and Spanish</li>
+        <li>The paper list typed in by us, and the two holiday texts written and sent</li>
+        <li>Follow-up on every size inquiry and every WhatsApp lead, by us, through December</li>
+        <li>The weekly scoreboard, every Monday, and the January 15 numbers</li>
+        <li>Sebastian's phone set up with the room picture tool, and shown how</li>
+        <li>Danny on the account. Not an account manager.</li></ul></div>
+      <div class="out"><h4>What it does not cover</h4><ul>
+        <li>Paid ads. We are not spending your money on ads in the first 60 days. If the organic numbers say ads would pay, that is a separate conversation in January</li>
+        <li>Photography. Sebastian's phone and the floor is enough to start</li>
+        <li>A delivery company, downsizing, or anything about the lease. Not until January 15</li>
+        <li>Realtor staging and apartment packages. What becomes possible, not what you are paying for now</li></ul></div>
+    </div>
+    <div class="fine"><b>On software.</b> The domain and anything the site runs on is billed to you, in your name, and it is small. We do not mark it up and we take nothing from any vendor. Everything built is yours. If you stop with us, it keeps running. <b>On the price.</b> A build like this is $3,500 to $5,000 for our other clients. This one is $500 a month because the proof is in the scoreboard and because of who Lizzy is to Danny. The 10% is how we get paid for being right.</div>
+  </div>
+  <div class="two" style="margin-top:14px">
+    <div class="how"><b>How we work.</b> The founders do the work. Danny runs the build and the follow-up. You are never handed to someone you have not met.</div>
+    <div class="how"><b>How you know.</b> Every Monday, one page of numbers. If they are not moving by January 15, we say so first.</div>
+  </div>
+</div></section>
+
+<!-- SECOND WOW -->
+<section><div class="wrap">
+  <div class="wow"><div class="k">One thing you may not know</div>
+    <h3>Two websites for the store exist on the internet, and both are dead.</h3>
+    <p>The business directories that feed Google list <code>rogerfurniture.site</code> and <code>rogers.onsale2.com</code> as the store's websites. We typed both in on Saturday. Neither loads. A customer who finds the store on a directory, taps the link, and gets a blank page assumes you closed. The same directories carry four different names for the store. Part of week one is pointing every one of them at the new site under one name.</p>
+    <p style="margin:0;font-size:13.5px;color:var(--dim)">What we did not get to yet: calling the store line after hours and timing an Instagram message. We will do both this week and tell you what happened.</p>
+  </div>
+</div></section>
+
+<!-- OUT OF SCOPE -->
+<section><div class="wrap">
+  <span class="eyebrow">Worth saying out loud</span>
+  <h2>Two things we are not charging for, <em>and one we are not promising.</em></h2>
+  <p>Lizzy's financing company is a real business on its own. Once the store's customers are in one place, the same tracker shows which ones are financing and how they pay. If that turns into something we build for the finance side, it is a separate conversation with its own economics. Not part of this.</p>
+  <p>The space. Ten thousand square feet next to new apartments is an asset for staging storage, for realtor furniture, for events. We will bring ideas in January. Not part of this either.</p>
+  <p style="margin:0">And one honest line: custom by Christmas depends on your builders doing in November what they do in a slow month. You said they would hire if the orders came. We will confirm it with them in week one, in writing, before a single deadline goes on the site.</p>
+</div></section>
+
+<div class="wrap next">
+  <span class="eyebrow">Next step</span>
+  <h2>Thirty minutes, Lizzy and Danny, <em>to say go.</em></h2>
+  <div class="slot"><div class="w">Tuesday, October 27<br>7:30pm, after the store closes</div><div class="s">By phone · Danny will text the link</div></div>
+  <p class="fb">If Tuesday does not work, text Danny two times that do. If the answer is yes, week one starts Wednesday and the site is live November 10.</p>
+</div>
+</main>
+
+<footer>RunRate Partners · Prepared for Rogers Furniture, La Puente · October 25, 2026<br>Every quote on this page is from Petra, Lizzy or Sebastian on the October 25 call</footer>
+</body>
+</html>
